@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HelloSigns</string>
+    <string name="bouton_tuto">Leçons</string>
+    <string name="boutin_quiz">Quiz</string>
+    <string name="drawer_tittle">HelloSigns</string>
+    <string name="dictionary">Dictionaire</string>
+    <string name="lessons">Leçons</string>
+    <string name="parametre">Parametres</string>
+    <string name="str_next">Suivant</string>
+    <string name="home">Menu Principal</string>
+</resources>
