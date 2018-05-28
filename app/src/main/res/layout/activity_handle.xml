@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/Title"
+        style="?android:textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/title"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="66dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Rename"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        tools:ignore="LabelFor"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/editTextPrenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="122dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/prenom"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        tools:ignore="LabelFor"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/editTextPays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="177dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/pays"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        tools:ignore="LabelFor"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/editTextJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="231dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/Rejob"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        tools:ignore="LabelFor"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/resume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="237dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="@string/resume"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        tools:ignore="LabelFor"
+        android:layout_alignParentLeft="true" />
+
+
+    <Button
+        android:id="@+id/btn_save"
+        style="?android:textAppearanceSmall"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="109dp"
+        android:background="@color/colorAccent"
+        android:text="@string/btn_save"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_account"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"
+        android:background="@color/colorAccent"
+        android:text="@string/setting_account"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
