@@ -58,14 +58,15 @@
         style="?android:textAppearanceSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/basicbutton"
         android:text="@string/btn_change"
         android:textColor="@android:color/white"
         android:textStyle="bold"
         tools:layout_editor_absoluteY="211dp"
         tools:layout_editor_absoluteX="199dp"
         android:layout_above="@+id/remove"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_margin="2dp"/>
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -80,7 +81,7 @@
         style="?android:textAppearanceSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/basicbutton"
         android:text="@string/btn_remove"
         android:textColor="@android:color/white"
         android:textStyle="bold"
@@ -88,7 +89,9 @@
         tools:layout_editor_absoluteX="199dp"
         android:layout_above="@+id/change_password_button"
         android:layout_alignStart="@+id/changePass"
-        android:layout_alignLeft="@+id/changePass" />
+        android:layout_alignLeft="@+id/changePass"
+        android:layout_margin="2dp"/>
+
 
     <Button
         android:id="@+id/change_password_button"
@@ -121,7 +124,7 @@
         style="?android:textAppearanceSmall"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/basicbutton"
         android:text="@string/btn_sign_out"
         android:textColor="@android:color/white"
         android:textStyle="bold"
@@ -149,8 +152,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="11dp"
-        android:background="@color/colorPrimary"
+        android:layout_margin="11dp"
+        android:background="@drawable/basicbutton"
         android:text="@string/go_app" />
 
 </RelativeLayout>

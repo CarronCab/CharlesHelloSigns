@@ -17,7 +17,7 @@
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
         android:id="@+id/main_menu"
-        android:background="@color/background"
+        android:background="@drawable/back"
         tools:context=".QuizSelection"
         >
 
@@ -25,7 +25,7 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/main_menu_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             android:elevation="4dp"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
@@ -44,7 +44,7 @@
             android:onClick="goToChiffres1"
             android:text="Chiffres 1 - 10"
             android:background="@drawable/basicbutton"
-            android:textColor="@color/colorAccent" />
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/TV2"
@@ -58,7 +58,7 @@
             android:onClick="goToChiffres2"
             android:text="Chiffres 10 - 20"
             android:background="@drawable/basicbutton"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/white"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -75,7 +75,7 @@
             android:onClick="goToHeure"
             android:text="Donner l'heure"
             android:background="@drawable/basicbutton"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/white"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -92,7 +92,7 @@
 
             android:onClick="goToFamille"
             android:text="Décrire la famille"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/white"
             android:background="@drawable/basicbutton"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"

@@ -19,14 +19,14 @@
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
         android:id="@+id/main_menu"
-        android:background="@color/background"
+        android:background="@drawable/back"
         tools:context=".MainMenu"
         >
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/main_menu_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             android:elevation="4dp"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
@@ -37,9 +37,13 @@
             android:layout_height="60dp" />
 
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:src="@drawable/verlainelogo" />
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:src="@mipmap/verlainlogo"
+            android:contentDescription=""
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -52,7 +56,7 @@
             android:background="@drawable/basicbutton"
             android:text="@string/bouton_tuto"
 
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/white"
             />
 
         <TextView
@@ -66,7 +70,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/basicbutton"
             android:text="@string/boutin_quiz"
-            android:textColor="@color/colorAccent" />
+            android:textColor="@color/white" />
 
     </LinearLayout>
 
