@@ -57,4 +57,5 @@
     <string name="pays">Pays</string>
     <string name="introduction">Introduction</string>
     <string name="content">Content</string>
+    <string name="d_connection">Déconnection</string>
 </resources>

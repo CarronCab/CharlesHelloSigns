@@ -1,8 +1,10 @@
 package com.example.charl.charleshellosigns;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,6 +17,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+
+import com.example.charl.charleshellosigns.AccountActivity.LoginActivity;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.Objects;
 
@@ -22,6 +30,7 @@ import java.util.Objects;
 public class MainMenu extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
+
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
@@ -74,12 +83,18 @@ public class MainMenu extends AppCompatActivity {
                                 Intent intent = new Intent(MainMenu.this, QuizSelection.class);
                                 startActivity(intent);
                                 return true;
+
+                            case R.id.deconnection:
+                                Intent login = new Intent (MainMenu.this, MainActivity.class);
+                                startActivity(login);
+                            return true;
                         }
 
                         return true;
                     }
                 });
     }
+
 
 
     //Création du menu
@@ -104,4 +119,6 @@ public class MainMenu extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 }

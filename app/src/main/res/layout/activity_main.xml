@@ -95,7 +95,7 @@
 
     <Button
         android:id="@+id/change_password_button"
-        style="?android:textAppearanceSmall"
+        android:background="@drawable/greybutton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="@string/change_password"
@@ -104,11 +104,12 @@
         tools:layout_editor_absoluteY="312dp"
         android:layout_above="@+id/remove_user_button"
         android:layout_alignStart="@+id/remove_user_button"
-        android:layout_alignLeft="@+id/remove_user_button" />
+        android:layout_alignLeft="@+id/remove_user_button"
+        android:layout_margin="2dp"/>
 
     <Button
         android:id="@+id/remove_user_button"
-        style="?android:textAppearanceSmall"
+        android:background="@drawable/greybutton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="@string/remove_user"
@@ -117,21 +118,23 @@
         tools:layout_editor_absoluteY="408dp"
         android:layout_above="@+id/sign_out"
         android:layout_alignStart="@+id/sign_out"
-        android:layout_alignLeft="@+id/sign_out" />
+        android:layout_alignLeft="@+id/sign_out"
+        android:layout_margin="2dp"/>
 
     <Button
         android:id="@+id/sign_out"
         style="?android:textAppearanceSmall"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:background="@drawable/basicbutton"
         android:text="@string/btn_sign_out"
         android:textColor="@android:color/white"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="42dp"
         tools:layout_editor_absoluteY="456dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_margin="2dp"/>
 
     <TextView
         android:id="@+id/useremail"

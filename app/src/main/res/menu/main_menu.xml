@@ -31,5 +31,11 @@
             android:title="@string/parametre"
             app:showAsAction="always" />
 
+        <item
+            android:id="@+id/deconnection"
+            android:icon="@drawable/deconnection"
+            android:title="@string/d_connection"
+            app:showAsAction="always" />
+
     </group>
 </menu>
