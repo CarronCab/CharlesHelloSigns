@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:layout_weight="1.0"
+    tools:context="com.example.charl.charleshellosigns.Dictionary">
+
+    <EditText
+        android:id="@+id/inputDict"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Recherche..." />
+
+    <TextView
+        android:id="@+id/textViewtrans2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="TextView"
+        android:textColor="@android:color/transparent" />
+
+    <ImageView
+        android:id="@+id/pictureDict"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        app:srcCompat="@drawable/questiontestsmall" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/basicbutton"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:onClick="research"
+        android:text="Rechercher" />
+
+    <TextView
+        android:id="@+id/textViewtrans"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.13"
+        android:text="TextView" />
+</LinearLayout>

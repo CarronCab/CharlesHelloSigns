@@ -88,6 +88,11 @@ public class MainMenu extends AppCompatActivity {
                                 Intent login = new Intent (MainMenu.this, MainActivity.class);
                                 startActivity(login);
                             return true;
+
+                            case R.id.dictionary:
+                                Intent dict = new Intent (MainMenu.this, Dictionary.class);
+                                startActivity(dict);
+                                return true;
                         }
 
                         return true;
