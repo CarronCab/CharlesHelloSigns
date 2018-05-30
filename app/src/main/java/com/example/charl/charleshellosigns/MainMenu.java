@@ -21,6 +21,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.charl.charleshellosigns.AccountActivity.LoginActivity;
+import com.example.charl.charleshellosigns.Tutorials.TutosActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -56,6 +57,17 @@ public class MainMenu extends AppCompatActivity {
                 //Intent l'activity lesson/tuto //
                 Intent QuizSelection = new Intent(MainMenu.this, QuizSelection.class);
                 startActivity(QuizSelection);
+            }
+        });
+
+        //Ouverture de l'activite de selection de tuto
+        Button btn_tuto = (Button)findViewById(R.id.button_tuto);
+        btn_tuto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Intent l'activity lesson/tuto //
+                Intent TutoSelection = new Intent(MainMenu.this, TutosActivity.class);
+                startActivity(TutoSelection);
             }
         });
 

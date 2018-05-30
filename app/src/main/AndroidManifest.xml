@@ -32,6 +32,11 @@
         <activity
             android:name=".QuizSelection"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Tutorials.CountingActivity"/>
+        <activity android:name=".Tutorials.TutosActivity"/>
+        <activity android:name=".Tutorials.FamilyActivity"/>
+        <activity android:name=".Tutorials.IntroduceActivity"/>
+        <activity android:name=".Tutorials.TimeActivity"/>
         <activity android:name=".MainActivity" />
         //android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".AccountActivity.SignupActivity" />
