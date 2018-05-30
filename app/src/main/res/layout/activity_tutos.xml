@@ -1,60 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- Use DrawerLayout as root container for activity -->
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back"
-    tools:context="com.example.charl.charleshellosigns.Tutorials.TutosActivity">
+    android:fitsSystemWindows="true">
 
-    <Button
-        android:id="@+id/button4"
-        android:drawableLeft="@drawable/compter_img"
-        android:drawablePadding="180sp"
-        android:drawableStart="@drawable/compter_img"
-        android:onClick="goToCounting"
-        android:text="@string/tuto_compter"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/basicbutton"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:layout_marginTop="50dp"/>
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        tools:context="com.example.charl.charleshellosigns.Tutorials.TutosActivity">
 
-    <Button
-        android:id="@+id/button7"
-        android:drawableLeft="@drawable/heure_img"
-        android:drawablePadding="200sp"
-        android:drawableStart="@drawable/heure_img"
-        android:onClick="goToTime"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/button4"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/basicbutton"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:text="@string/time"/>
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/main_menu_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-    <Button
-        android:id="@+id/button8"
-        android:drawableLeft="@drawable/famille_img"
-        android:drawablePadding="180sp"
-        android:drawableStart="@drawable/famille_img"
-        android:onClick="goToFamily"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="@string/Family"
-        android:layout_below="@+id/button7"
-        android:background="@drawable/basicbutton"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/basicbutton"
+            android:drawableLeft="@drawable/compter_img"
+            android:drawablePadding="180sp"
+            android:drawableStart="@drawable/compter_img"
+            android:onClick="goToCounting"
+            android:text="@string/tuto_compter"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true" />
 
-    <Button
+        <Button
+            android:id="@+id/button7"
+            android:drawableLeft="@drawable/heure_img"
+            android:drawablePadding="200sp"
+            android:drawableStart="@drawable/heure_img"
+            android:onClick="goToTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/button4"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/basicbutton"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="@string/time"/>
+
+        <Button
+            android:id="@+id/button8"
+            android:drawableLeft="@drawable/famille_img"
+            android:drawablePadding="180sp"
+            android:drawableStart="@drawable/famille_img"
+            android:onClick="goToFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/Family"
+            android:layout_below="@+id/button7"
+            android:background="@drawable/basicbutton"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <Button
         android:id="@+id/button9"
         android:drawableLeft="@drawable/se_presenterbouton"
         android:drawablePadding="150sp"
@@ -71,4 +91,15 @@
         android:layout_marginTop="20dp"/>
 
 
-</RelativeLayout>
+    </RelativeLayout>
+    <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/main_menu"
+        app:headerLayout="@layout/nav_header"/>
+
+</android.support.v4.widget.DrawerLayout>

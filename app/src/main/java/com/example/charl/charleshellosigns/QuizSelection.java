@@ -16,6 +16,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.charl.charleshellosigns.Tutorials.TutosActivity;
+
 import java.util.Objects;
 
 public class QuizSelection extends AppCompatActivity {
@@ -44,9 +46,6 @@ public class QuizSelection extends AppCompatActivity {
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
                     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                        // set item as selected to persist highlight
-                        menuItem.setChecked(true);
-
 
                         // close drawer when item is tapped
                         mDrawerLayout.closeDrawers();
@@ -60,6 +59,25 @@ public class QuizSelection extends AppCompatActivity {
                             case R.id.home:
                                 Intent MainMenu = new Intent(QuizSelection.this, MainMenu.class);
                                 startActivity(MainMenu);
+                                return true;
+
+                            case R.id.deconnection:
+                                Intent login = new Intent (QuizSelection.this, MainActivity.class);
+                                startActivity(login);
+                                return true;
+
+                            case R.id.dictionary:
+                                Intent dict = new Intent (QuizSelection.this, Dictionary.class);
+                                startActivity(dict);
+                                return true;
+                            case R.id.lessons:
+                                Intent lecon = new Intent( QuizSelection.this, TutosActivity.class);
+                                startActivity(lecon);
+                                return true;
+
+                            case R.id.parametre:
+                                Intent param = new Intent(QuizSelection.this, ProfileActivity.class);
+                                startActivity(param);
                                 return true;
                         }
 

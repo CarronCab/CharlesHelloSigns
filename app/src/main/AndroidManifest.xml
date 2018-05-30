@@ -32,22 +32,35 @@
         <activity
             android:name=".QuizSelection"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".Tutorials.CountingActivity"/>
-        <activity android:name=".Tutorials.TutosActivity"/>
-        <activity android:name=".Tutorials.FamilyActivity"/>
-        <activity android:name=".Tutorials.IntroduceActivity"/>
-        <activity android:name=".Tutorials.TimeActivity"/>
-        <activity android:name=".MainActivity" />
-        //android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".AccountActivity.SignupActivity" />
-        //android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".AccountActivity.ResetPassword" />
-        //android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".HandleActivity" />
-        //android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".ProfileActivity" />
-        //android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".Dictionary"></activity>
+        <activity
+            android:name=".Tutorials.CountingActivity"/>
+        <activity
+            android:name=".Tutorials.TutosActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Tutorials.FamilyActivity"/>
+        <activity
+            android:name=".Tutorials.IntroduceActivity"/>
+        <activity
+            android:name=".Tutorials.TimeActivity"/>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".AccountActivity.SignupActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".AccountActivity.ResetPassword"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".HandleActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".ProfileActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".Dictionary"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
     </application>
 
 </manifest>

@@ -17,6 +17,8 @@ import android.view.View;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import com.example.charl.charleshellosigns.Tutorials.TutosActivity;
+
 import java.util.Objects;
 
 
@@ -47,8 +49,6 @@ public class ResultActivity extends AppCompatActivity {
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
                     public boolean onNavigationItemSelected(MenuItem menuItem) {
-                        // set item as selected to persist highlight
-                        menuItem.setChecked(true);
 
 
                         // close drawer when item is tapped
@@ -60,13 +60,32 @@ public class ResultActivity extends AppCompatActivity {
 
                         int id = menuItem.getItemId();
                         switch (id) {
+                            case R.id.home:
+                                Intent home = new Intent(ResultActivity.this, MainMenu.class);
+                                startActivity(home);
+                                return true;
                             case R.id.quizzes:
                                 Intent intent = new Intent(ResultActivity.this, QuizSelection.class);
                                 startActivity(intent);
                                 return true;
-                            case R.id.home:
-                                Intent MainMenu = new Intent(ResultActivity.this, MainMenu.class);
-                                startActivity(MainMenu);
+
+                            case R.id.deconnection:
+                                Intent login = new Intent (ResultActivity.this, MainActivity.class);
+                                startActivity(login);
+                                return true;
+
+                            case R.id.dictionary:
+                                Intent dict = new Intent (ResultActivity.this, Dictionary.class);
+                                startActivity(dict);
+                                return true;
+                            case R.id.lessons:
+                                Intent lecon = new Intent( ResultActivity.this, TutosActivity.class);
+                                startActivity(lecon);
+                                return true;
+
+                            case R.id.parametre:
+                                Intent param = new Intent(ResultActivity.this, ProfileActivity.class);
+                                startActivity(param);
                                 return true;
                         }
 

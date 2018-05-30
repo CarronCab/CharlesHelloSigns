@@ -78,9 +78,6 @@ public class MainMenu extends AppCompatActivity {
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
                     public boolean onNavigationItemSelected(MenuItem menuItem) {
-                        // set item as selected to persist highlight
-                        menuItem.setChecked(true);
-
 
                         // close drawer when item is tapped
                         mDrawerLayout.closeDrawers();
@@ -91,6 +88,7 @@ public class MainMenu extends AppCompatActivity {
 
                         int id = menuItem.getItemId();
                         switch (id) {
+
                             case R.id.quizzes:
                                 Intent intent = new Intent(MainMenu.this, QuizSelection.class);
                                 startActivity(intent);
@@ -104,6 +102,16 @@ public class MainMenu extends AppCompatActivity {
                             case R.id.dictionary:
                                 Intent dict = new Intent (MainMenu.this, Dictionary.class);
                                 startActivity(dict);
+                                return true;
+
+                            case R.id.lessons:
+                                Intent lecon = new Intent( MainMenu.this, TutosActivity.class);
+                                startActivity(lecon);
+                                return true;
+
+                            case R.id.parametre:
+                                Intent param = new Intent(MainMenu.this, ProfileActivity.class);
+                                startActivity(param);
                                 return true;
                         }
 
