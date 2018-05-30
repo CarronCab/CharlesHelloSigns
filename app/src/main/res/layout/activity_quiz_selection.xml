@@ -12,13 +12,13 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".QuizSelection"
+        android:id="@+id/main_menu"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
-        android:id="@+id/main_menu"
         android:background="@drawable/back"
-        tools:context=".QuizSelection"
         >
 
 
@@ -34,12 +34,18 @@
         <TextView
             android:id="@+id/TV1"
             android:layout_width="wrap_content"
-            android:layout_height="45dp" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="45dp"
+            android:text="Quiz" />
 
         <Button
             android:id="@+id/chiffres1"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/compter_img"
+            android:drawablePadding="180sp"
+            android:drawableStart="@drawable/compter_img"
             android:layout_marginTop="32dp"
             android:onClick="goToChiffres1"
             android:text="Chiffres 1 - 10"
@@ -53,9 +59,12 @@
 
         <Button
             android:id="@+id/chiffres10"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="goToChiffres2"
+            android:drawableLeft="@drawable/compter_img"
+            android:drawablePadding="180sp"
+            android:drawableStart="@drawable/compter_img"
             android:text="Chiffres 10 - 20"
             android:background="@drawable/basicbutton"
             android:textColor="@color/white"
@@ -70,9 +79,13 @@
 
         <Button
             android:id="@+id/heure"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="goToHeure"
+            android:drawableLeft="@drawable/heure_img"
+            android:drawablePadding="200sp"
+            android:drawableStart="@drawable/heure_img"
+            android:layout_centerHorizontal="true"
             android:text="Donner l'heure"
             android:background="@drawable/basicbutton"
             android:textColor="@color/white"
@@ -87,11 +100,15 @@
 
         <Button
             android:id="@+id/famille"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
             android:onClick="goToFamille"
             android:text="Décrire la famille"
+            android:drawableLeft="@drawable/famille_img"
+            android:drawablePadding="180sp"
+            android:drawableStart="@drawable/famille_img"
+            android:layout_centerHorizontal="true"
             android:textColor="@color/white"
             android:background="@drawable/basicbutton"
             app:layout_constraintLeft_toLeftOf="parent"

@@ -8,11 +8,13 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center_horizontal"
         android:background="@drawable/back"
         tools:context="com.example.charl.charleshellosigns.Tutorials.TutosActivity">
 
@@ -25,13 +27,19 @@
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
+        <TextView
+            android:id="@+id/theTutoriels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="45dp"
+            android:text="Tutoriels" />
+
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="72dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/basicbutton"
             android:drawableLeft="@drawable/compter_img"
             android:drawablePadding="180sp"
@@ -47,10 +55,10 @@
             android:drawableLeft="@drawable/heure_img"
             android:drawablePadding="200sp"
             android:drawableStart="@drawable/heure_img"
+            android:layout_centerHorizontal="true"
             android:onClick="goToTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_below="@+id/button4"
             android:layout_marginTop="20dp"
             android:background="@drawable/basicbutton"
@@ -60,14 +68,15 @@
 
         <Button
             android:id="@+id/button8"
+
             android:drawableLeft="@drawable/famille_img"
             android:drawablePadding="180sp"
             android:drawableStart="@drawable/famille_img"
-            android:onClick="goToFamily"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:text="@string/Family"
+            android:onClick="goToFamily"
             android:layout_below="@+id/button7"
             android:background="@drawable/basicbutton"
             android:textColor="@android:color/white"
@@ -91,7 +100,7 @@
         android:layout_marginTop="20dp"/>
 
 
-    </RelativeLayout>
+    </LinearLayout>
     <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
