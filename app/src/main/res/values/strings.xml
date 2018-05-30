@@ -57,5 +57,35 @@
     <string name="pays">Pays</string>
     <string name="introduction">Introduction</string>
     <string name="content">Content</string>
-    <string name="d_connection">Déconnection</string>
+    <string name="d_connection">Déconnexion</string>
+
+    <string name="tuto_alphabet">L\'Alphabet</string>
+    <string name="tuto_presenter">Se Présenter</string>
+    <string name="tuto_saison">Les Saisons</string>
+    <string name="tuto_compter">Compter</string>
+
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">send</string>
+    <string name="button_quizs">Quizs</string>
+    <string name="button_tutos">Tutoriels</string>
+    <string name="test">Test</string>
+    <string name="test2">Test2</string>
+    <string name="test3s">Test3s</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_result">Results!!!</string>
+    <string name="title_activity_navigation_drawer">navigationDrawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="about_text">
+  <![CDATA[
+    Author: Your name<br/><br/>Your description text, changelog, licences etc... ]]>
+</string>
+    <string name="you_can_spell_check_very_long_text_areas_without_compromising_any_performance_hits_regardless_of_the_size_of_the_text_ultimatespell_only_sends_small_portions_of_the_text_to_the_server_as_needed_while_the_user_spell_checks_through_the_text_basically_the_spell_check_dialog_box_makes_on_demand_calls_to_a_callback_page_on_the_server_without_refreshing_the_whole_page_or_dialog_it_keeps_processing_small_blocks_of_text_using_the_ajax_asynchronous_javascript_and_xml_techniques_note_that_ultimatespell_displays_the_text_in_the_dialog_box_sentence_by_sentence_just_like_microsoft_word_this_helps_the_user_understand_the_actual_context_in_which_the_spelling_error_occurs">You can spell check very long text areas without compromising any performance hits. Regardless of the size of the text, UltimateSpell only sends small portions of the text to the server as needed, while the user spell checks through the text. Basically the spell check dialog box makes on-demand calls to a callback page on the server without refreshing the whole page or dialog. It keeps processing small blocks of text using the AJAX (Asynchronous JavaScript and XML) techniques. Note that UltimateSpell displays the text in the dialog box sentence-by-sentence just like Microsoft Word. This helps the user understand the actual context in which the spelling error occurs.</string>
+    <string name="compter">Compter</string>
+    <string name="Family">La famille</string>
+    <string name="time">L\'heure</string>
 </resources>

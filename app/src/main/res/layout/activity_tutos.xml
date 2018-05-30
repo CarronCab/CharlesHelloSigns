@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="com.example.charl.charleshellosigns.Tutorials.TutosActivity">
+
+    <Button
+        android:id="@+id/button4"
+        android:drawableLeft="@drawable/compter_img"
+        android:drawablePadding="180sp"
+        android:drawableStart="@drawable/compter_img"
+        android:onClick="goToCounting"
+        android:text="@string/tuto_compter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/basicbutton"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/button7"
+        android:drawableLeft="@drawable/heure_img"
+        android:drawablePadding="200sp"
+        android:drawableStart="@drawable/heure_img"
+        android:onClick="goToTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button4"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/basicbutton"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="@string/time"/>
+
+    <Button
+        android:id="@+id/button8"
+        android:drawableLeft="@drawable/famille_img"
+        android:drawablePadding="180sp"
+        android:drawableStart="@drawable/famille_img"
+        android:onClick="goToFamily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Family"
+        android:layout_below="@+id/button7"
+        android:background="@drawable/basicbutton"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/button9"
+        android:drawableLeft="@drawable/se_presenterbouton"
+        android:drawablePadding="150sp"
+        android:drawableStart="@drawable/se_presenterbouton"
+        android:onClick="goToIntroduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tuto_presenter"
+        android:layout_below="@+id/button8"
+        android:background="@drawable/basicbutton"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
