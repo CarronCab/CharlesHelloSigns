@@ -13,8 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="ExtraText">
-        <activity
-            android:name=".AccountActivity.LoginActivity">
+        <activity android:name=".AccountActivity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,32 +22,27 @@
         </activity>
         <activity
             android:name=".MainMenu"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".QuizActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".ResultActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".QuizSelection"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-
-        <activity
-            android:name=".MainActivity"/>
-            //android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity
-            android:name=".AccountActivity.SignupActivity"/>
-            //android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity
-            android:name=".AccountActivity.ResetPassword"/>
-            //android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity
-            android:name=".HandleActivity"/>
-            //android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity
-            android:name=".ProfileActivity"/>
-            //android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".MainActivity" />
+        //android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".AccountActivity.SignupActivity" />
+        //android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".AccountActivity.ResetPassword" />
+        //android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".HandleActivity" />
+        //android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".ProfileActivity" />
+        //android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".Dictionary"></activity>
     </application>
 
 </manifest>
