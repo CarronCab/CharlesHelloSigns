@@ -18,6 +18,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.charl.charleshellosigns.Tutorials.TutosActivity;
 
@@ -104,64 +105,64 @@ public class Dictionary extends AppCompatActivity {
     }
 
     private void setPictures(String rd, ImageView pic){
-        if(rd.equalsIgnoreCase("1")){
+        if(rd.equalsIgnoreCase("1") || rd.equalsIgnoreCase("un")){
             pic.setImageResource(R.drawable.signe1);
         }
-        else if(rd.equalsIgnoreCase("2")){
+        else if(rd.equalsIgnoreCase("2") || rd.equalsIgnoreCase("Deux")){
             pic.setImageResource(R.drawable.signe2);
         }
-        else if(rd.equalsIgnoreCase("3")){
+        else if(rd.equalsIgnoreCase("3") || rd.equalsIgnoreCase("Trois")){
             pic.setImageResource(R.drawable.signe3);
         }
-        else if(rd.equalsIgnoreCase("4")){
+        else if(rd.equalsIgnoreCase("4") || rd.equalsIgnoreCase("Quatre")){
             pic.setImageResource(R.drawable.signe4);
         }
-        else if(rd.equalsIgnoreCase("5")){
+        else if(rd.equalsIgnoreCase("5") || rd.equalsIgnoreCase("Cinq")){
             pic.setImageResource(R.drawable.signe5);
         }
-        else if(rd.equalsIgnoreCase("6")){
+        else if(rd.equalsIgnoreCase("6") || rd.equalsIgnoreCase("Six")){
             pic.setImageResource(R.drawable.signe6);
         }
-        else if(rd.equalsIgnoreCase("7")){
+        else if(rd.equalsIgnoreCase("7") || rd.equalsIgnoreCase("Sept")){
             pic.setImageResource(R.drawable.signe7);
         }
-        else if(rd.equalsIgnoreCase("8")){
+        else if(rd.equalsIgnoreCase("8") || rd.equalsIgnoreCase("Huit")){
             pic.setImageResource(R.drawable.signe8);
         }
-        else if(rd.equalsIgnoreCase("9")){
+        else if(rd.equalsIgnoreCase("9") || rd.equalsIgnoreCase("Neuf")){
             pic.setImageResource(R.drawable.signe9);
         }
-        else if(rd.equalsIgnoreCase("10")){
+        else if(rd.equalsIgnoreCase("10") || rd.equalsIgnoreCase("Dix")){
             pic.setImageResource(R.drawable.signe10);
         }
-        else if(rd.equalsIgnoreCase("11")){
+        else if(rd.equalsIgnoreCase("11") || rd.equalsIgnoreCase("Onze")){
             pic.setImageResource(R.drawable.signe11);
         }
-        else if(rd.equalsIgnoreCase("12")){
+        else if(rd.equalsIgnoreCase("12") || rd.equalsIgnoreCase("Douze")){
             pic.setImageResource(R.drawable.signe12);
         }
-        else if(rd.equalsIgnoreCase("13")){
+        else if(rd.equalsIgnoreCase("13") || rd.equalsIgnoreCase("Treize")){
             pic.setImageResource(R.drawable.signe13);
         }
-        else if(rd.equalsIgnoreCase("14")){
+        else if(rd.equalsIgnoreCase("14") || rd.equalsIgnoreCase("Quatorze")){
             pic.setImageResource(R.drawable.signe14);
         }
-        else if(rd.equalsIgnoreCase("15")){
+        else if(rd.equalsIgnoreCase("15") || rd.equalsIgnoreCase("Quinze")){
             pic.setImageResource(R.drawable.signe15);
         }
-        else if(rd.equalsIgnoreCase("16")){
+        else if(rd.equalsIgnoreCase("16") || rd.equalsIgnoreCase("Seize")){
             pic.setImageResource(R.drawable.signe16);
         }
-        else if(rd.equalsIgnoreCase("17")){
+        else if(rd.equalsIgnoreCase("17") || rd.equalsIgnoreCase("Dix-Sept")){
             pic.setImageResource(R.drawable.signe17);
         }
-        else if(rd.equalsIgnoreCase("18")){
+        else if(rd.equalsIgnoreCase("18") || rd.equalsIgnoreCase("Dix-huit")){
             pic.setImageResource(R.drawable.signe18);
         }
-        else if(rd.equalsIgnoreCase("19")){
+        else if(rd.equalsIgnoreCase("19") || rd.equalsIgnoreCase("Dix-neuf")){
             pic.setImageResource(R.drawable.signe19);
         }
-        else if(rd.equalsIgnoreCase("20")){
+        else if(rd.equalsIgnoreCase("20") || rd.equalsIgnoreCase("Vingt")){
             pic.setImageResource(R.drawable.signe20);
         }
         else if(rd.equalsIgnoreCase("2h15")){
@@ -214,6 +215,9 @@ public class Dictionary extends AppCompatActivity {
         }
         else if(rd.equalsIgnoreCase("soeur")){
             pic.setImageResource(R.drawable.signesoeur);
+        }
+        else {
+            Toast.makeText(getApplicationContext(),"Ce signe n'est pas dans la base de données",Toast.LENGTH_LONG).show();
         }
 
     }
